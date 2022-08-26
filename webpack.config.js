@@ -6,6 +6,11 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
   },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src')
+    },
+  },
   module: {
     rules: [
       {
