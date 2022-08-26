@@ -1,0 +1,23 @@
+.input {
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-title);
+  border: .1rem solid var(--color-subTitle);
+  border-radius: var(--roundness);
+  outline: none;
+}
+
+.input:focus-within {
+  border: .2rem solid var(--color-primary);
+}
+
+.input::placeholder {
+  color: var(--color-subTitle);
+}
+
+.inputLabel {
+  color: var(--color-subTitle);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
