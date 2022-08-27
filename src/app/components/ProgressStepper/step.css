@@ -1,11 +1,11 @@
-.stepWrapper {
+.wrapper {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.stepWrapper.edgeStep {
-  width: 50%;
+.wrapper.edgeStep {
+  width: 66.6%;
 }
 
 .step {

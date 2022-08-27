@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { STEP_POSITIONS } from 'src/lib/constants';
 
 import Step from './Step';
+import styles from './step.css';
 
 function ProgressStepper(props) {
   const { stepNum, stepsCount } = props;
@@ -28,7 +29,7 @@ function ProgressStepper(props) {
 
   // Render each step
   const renderSteps = () => {
-    const x = [...Array(_stepsCount).keys()].map((_, index) => {
+    return [...Array(_stepsCount).keys()].map((_, index) => {
       if (index === 0) {
         return (
           <Step 
@@ -57,8 +58,6 @@ function ProgressStepper(props) {
         />
       );
     });
-    console.log(x);
-    return x;
   };
 
   return (

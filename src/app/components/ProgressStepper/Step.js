@@ -11,7 +11,7 @@ function Step(props) {
 
   const startStep = () => {
     return (
-      <div className={cls(styles.stepWrapper, styles.edgeStep)}>
+      <div className={cls(styles.wrapper, styles.edgeStep)}>
         <div className={cls(styles.step, {[styles.filled]: filled})}>{number}</div>
         <div className={cls(styles.stepLine, {[styles.filled]: filled})}></div>
       </div>
@@ -20,7 +20,7 @@ function Step(props) {
 
   const middleStep = () => {
     return (
-      <div className={styles.stepWrapper}>
+      <div className={styles.wrapper}>
         <div className={cls(styles.stepLine, {[styles.filled]: filled})}></div>
         <div className={cls(styles.step, {[styles.filled]: filled})}>{number}</div>
         <div className={cls(styles.stepLine, {[styles.filled]: filled})}></div>
@@ -30,7 +30,7 @@ function Step(props) {
 
   const endStep = () => {
     return (
-      <div className={cls(styles.stepWrapper, styles.edgeStep)}>
+      <div className={cls(styles.wrapper, styles.edgeStep)}>
         <div className={cls(styles.stepLine, {[styles.filled]: filled})}></div>
         <div className={cls(styles.step, {[styles.filled]: filled})}>{number}</div>
       </div>
