@@ -9,13 +9,19 @@
   max-width: 50rem;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .headerTitle {
   color: var(--color-title);
   font-weight: 900;
   font-size: 3rem;
-  width: 100%;
 }
 
 .page {
   flex: 1;
+  margin-top: 6rem;
 }

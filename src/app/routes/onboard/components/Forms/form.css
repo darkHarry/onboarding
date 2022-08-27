@@ -16,7 +16,7 @@
 
 .title {
   composes: primaryText from 'src/global.css';
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
 }

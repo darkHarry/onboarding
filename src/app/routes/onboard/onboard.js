@@ -6,6 +6,8 @@ import { WORKSPACE_USE } from 'src/lib/constants';
 
 import Forms from './components/Forms';
 
+import styles from './onboard.css';
+
 function onBoardPage() {
   /* All form data */
   const [formData, setFormData] = useState({
@@ -28,7 +30,9 @@ function onBoardPage() {
   return (
     <div>
       <ProgressStepper stepNum={currentStep} stepsCount={MAX_STEPS} />
-      {renderForms()}
+      <div className={styles.wrapper}>
+        {renderForms()}
+      </div>
     </div>
   );  
 }
