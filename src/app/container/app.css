@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 8rem 2rem;
+}
+
+.headerTitle {
+  display: inline;
+  color: var(--color-title);
+  font-weight: 900;
+  font-size: 3rem;
+  width: 100%;
+}
+
+.page {
+  flex: 1;
+}

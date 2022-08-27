@@ -3,3 +3,8 @@ export const STEP_POSITIONS = {
   MIDDLE: "middle",
   END: "end"
 };
+
+export const WORKSPACE_USE = {
+  SELF: "self",
+  MULTI: "multi"
+};
