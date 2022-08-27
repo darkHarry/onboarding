@@ -15,7 +15,7 @@ function onBoardPage() {
   });
 
   /* Step finished till now */
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(2);
   const MAX_STEPS = 4; // Total Steps
 
   const renderForms = () => {

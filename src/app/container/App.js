@@ -13,7 +13,7 @@ function App() {
     <main className={styles.container}>
       <header>
         <img className={styles.headerImg} alt="logo" />
-        <h1 className={styles.headerTitle}>Eden</h1>
+        <span className={styles.headerTitle}>Eden</span>
       </header>
       <section className={styles.page}>
         <Routes.BoardPage />
