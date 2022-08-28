@@ -26,7 +26,7 @@ function onBoardPage() {
   const handleNextClick = () => {
     setCurrentStep(step => step+1);
   };
-  console.log(formData);
+
   /* Renderers */
   const renderForms = () => {
     const formIndex = currentStep-1;
