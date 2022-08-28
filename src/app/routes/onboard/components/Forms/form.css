@@ -8,6 +8,7 @@
 }
 .radioInput:checked + * {
   border: .1rem solid var(--color-primary);
+  background-color: var(--color-border);
 }
 
 .formContainer {
@@ -44,4 +45,12 @@
   font-weight: 400;
   margin-top: 2rem;
   text-align: center;
+}
+
+.successTick {
+  display: block;
+  width: 8rem;
+  height: auto;
+  margin: 4rem auto;
+  margin-top: 8rem;
 }

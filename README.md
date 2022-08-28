@@ -5,3 +5,5 @@ Reactjs Implementation of https://dribbble.com/shots/15669113-Onboarding-Explora
 person icon: https://iconscout.com/icon/person-1780867
 
 people icon: https://iconscout.com/icon/people-1767899
+
+tick icon: https://iconscout.com/icon/tick-58

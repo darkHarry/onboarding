@@ -8,7 +8,7 @@ function Input(props) {
 
   const handleChange = (e) => {
     if (typeof onChange === 'function') {
-      onChange(e.target.value);
+      onChange(e.target.value, e);
     }
   };
 

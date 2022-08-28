@@ -10,7 +10,6 @@ import logo from 'src/public/logo.webp';
 import styles from './app.css';
 
 function App() {
-  console.log(logo);
   return ( 
     <main className={styles.container}>
       <header className={styles.header}>

@@ -11,20 +11,27 @@ import styles from './onboard.css';
 function onBoardPage() {
   /* All form data */
   const [formData, setFormData] = useState({
-    user: { email: null, name: null },
-    workspace: { name: null, url: null },
+    userName: null,
+    displayName: null,
+    workspaceName: null,
+    workspaceUrl: null,
     useCase: WORKSPACE_USE.SELF
   });
 
   /* Step finished till now */
-  const [currentStep, setCurrentStep] = useState(3);
+  const [currentStep, setCurrentStep] = useState(1);
   const MAX_STEPS = 4; // Total Steps
 
+  /* Handlers */
+  const handleNextClick = () => {
+    setCurrentStep(step => step+1);
+  };
+  console.log(formData);
+  /* Renderers */
   const renderForms = () => {
     const formIndex = currentStep-1;
     const Form = Forms[formIndex];
-    console.log(Form);
-    return <Form />;
+    return <Form data={formData} setData={setFormData} onNext={handleNextClick} />;
   };
 
   return (
