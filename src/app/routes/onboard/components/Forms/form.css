@@ -1,3 +1,15 @@
+/* Radio input to Card Styling */
+.radioInput {
+  composes: visuallyHidden from 'src/global.css';
+  appearance: none;
+}
+.radioInput:focus + * {
+  border: .1rem solid var(--color-primary);
+}
+.radioInput:checked + * {
+  border: .1rem solid var(--color-primary);
+}
+
 .formContainer {
   margin-top: 5rem;
 }
@@ -12,6 +24,11 @@
   /* composition doesn't work with '.class > *' */
   color: var(--color-title);
   opacity: .8;
+}
+
+.radioContainer {
+  display: flex;
+  gap: 4rem;
 }
 
 .title {
