@@ -1,0 +1,47 @@
+:root {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+
+  --color-primary: #758ae0;
+  --color-title: #151b28;
+  --color-subTitle: #5c6984;
+  --color-background: #fff;
+  --color-border: #eff1f7;
+
+  
+  --roundness: .6rem;
+}
+
+html, body, * > * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.primaryText {
+  color: var(--color-title);
+}
+.primaryTextLight {
+  color: var(--color-title);
+  opacity: .8;
+}
+
+.secondaryText {
+  color: var(--color-subTitle);
+}
+.secondaryTextLight {
+  color: var(--color-subTitle);
+  opacity: .8;
+}
+
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  border: .1rem solid var(--color-border);
+  border-radius: var(--roundness);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  outline: none;
+}
+
+.wrapper:focus, wrapper:active {
+  border: .1rem solid var(--color-primary);
+}
+
+.icon {
+  width: 4rem;
+  height: auto;
+}
+
+.title {
+  margin-top: 2rem;
+  composes: primaryText from 'src/global.css';
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 1rem;
+  composes: secondaryText from 'src/global.css';
+  font-size: 1.5rem;
+}

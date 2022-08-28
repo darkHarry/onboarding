@@ -1,0 +1,14 @@
+.button {
+  border: 0;
+  background: var(--color-primary);
+  border-radius: var(--roundness);
+  color: var(--color-background);
+  width: 100%;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.button:active {
+  opacity: .8;
+}

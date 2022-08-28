@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 8rem 2rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTitle {
+  color: var(--color-title);
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.page {
+  flex: 1;
+  margin-top: 6rem;
+}

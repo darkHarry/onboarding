@@ -1,0 +1,56 @@
+/* Radio input to Card Styling */
+.radioInput {
+  composes: visuallyHidden from 'src/global.css';
+  appearance: none;
+}
+.radioInput:focus + * {
+  border: .1rem solid var(--color-primary);
+}
+.radioInput:checked + * {
+  border: .1rem solid var(--color-primary);
+  background-color: var(--color-border);
+}
+
+.formContainer {
+  margin-top: 5rem;
+}
+
+.formContainer > * {
+  margin-top: 2rem;
+}
+
+.inputContainer > * {
+  width: 100%;
+  margin-top: .5rem;
+  /* composition doesn't work with '.class > *' */
+  color: var(--color-title);
+  opacity: .8;
+}
+
+.radioContainer {
+  display: flex;
+  gap: 4rem;
+}
+
+.title {
+  composes: primaryText from 'src/global.css';
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subTitle {
+  composes: secondaryText from 'src/global.css';
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.successTick {
+  display: block;
+  width: 8rem;
+  height: auto;
+  margin: 4rem auto;
+  margin-top: 8rem;
+}

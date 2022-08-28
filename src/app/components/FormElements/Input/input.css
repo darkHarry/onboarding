@@ -1,0 +1,57 @@
+.input {
+  background-color: transparent;
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  border: .1rem solid var(--color-border);
+  border-radius: var(--roundness);
+  outline: none;
+  composes: secondaryText from 'src/global.css';
+}
+
+.input:focus-within {
+  border: .2rem solid var(--color-primary);
+}
+
+.input::placeholder {
+  color: var(--color-subTitle);
+  opacity: .8;
+}
+
+.inputLabel {
+  composes: primaryTextLight from 'src/global.css';
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* adorned input */
+.container {
+  display: flex;
+  border: .1rem solid var(--color-border);
+  border-radius: var(--roundness);
+}
+
+.container:focus-within {
+  border: .2rem solid var(--color-primary);
+}
+
+.adornment {
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  border-right: .1rem solid var(--color-border);
+  border-top-left-radius: var(--roundness);
+  border-bottom-left-radius: var(--roundness);
+  composes: secondaryText from 'src/global.css';
+  font-weight: 600;
+
+  /* move to global if used more than once */
+  background-color: #f8f9fc;
+}
+
+.container .input {
+  border: 0;
+  flex: 1;
+}
+
+.container .input:focus-within {
+  border: 0;
+}
