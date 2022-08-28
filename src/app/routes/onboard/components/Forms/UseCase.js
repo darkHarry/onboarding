@@ -21,17 +21,6 @@ function UseCaseForm(props) {
     }
   };
 
-  const handleChange = (e) => {
-    console.log(e);
-    /*
-    if (e.target.id === "username") {
-      setData(_data => ({ ..._data, userName: value }));
-    } else if (e.target.id === "displayname") {
-      setData(_data => ({ ..._data, displayName: value }));
-    }
-    */
-  };
-
   const handleClick = (useCaseValue) => {
     return () => {
       setData(_data => ({ ..._data, useCase: useCaseValue }));
@@ -52,7 +41,6 @@ function UseCaseForm(props) {
                 name="usecase" 
                 value={WORKSPACE_USE.SELF} 
                 checked={data.useCase === WORKSPACE_USE.SELF} 
-                onChange={handleChange} 
               />
               <RadioCard 
                 onClick={handleClick(WORKSPACE_USE.SELF)} 
@@ -69,7 +57,6 @@ function UseCaseForm(props) {
                 name="usecase" 
                 value={WORKSPACE_USE.MULTI} 
                 checked={data.useCase === WORKSPACE_USE.MULTI} 
-                onChange={handleChange} 
               />
               <RadioCard 
                 onClick={handleClick(WORKSPACE_USE.MULTI)} 
